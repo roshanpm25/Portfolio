@@ -1,0 +1,65 @@
+@import "../../vars.css";
+
+.footer {
+  color: var(--color-text);
+  margin-top: 0;
+  background: linear-gradient(90deg, #3a1c71, #000000);
+  backdrop-filter: blur(10px);
+  padding: 58px 10%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top:10px;
+}
+
+.text p {
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.iconsRow {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.link {
+  display: inline-block;
+}
+
+.link img {
+  width: 50px;  /* Adjust icon size as needed */
+  height: 50px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  filter: brightness(0) invert(1); /* Makes icons white if they are black */
+}
+
+.link img:hover {
+  transform: scale(1.1);
+  filter: brightness(1) invert(0); /* On hover invert colors for effect */
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 600px) {
+  .text p {
+    font-size: 28px;
+  }
+  
+  .iconsRow {
+    gap: 25px;
+  }
+  
+  .link img {
+    width: 40px;
+    height: 40px;
+  }
+}

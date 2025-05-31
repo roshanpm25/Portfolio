@@ -1,0 +1,22 @@
+[
+  {
+    "title": "MealBridge",
+    "imageSrc": "projects/food.png",
+    "description": "This is a project made to redirect surplus food from gatherings to needy people.",
+    "skills": ["React", "Express", "Node","Mongo"]
+  },
+  {
+    "title": "Payment Tracking System",
+    "imageSrc": "projects/payment.png",
+    "description": "This is a project made to track payments in a shop environment for billing and record keeping.",
+    "skills": ["React", "Express", "Node", "Mongo"]
+
+  },
+    {
+    "title": "AI-Powered Resume Ranker",
+    "imageSrc": "projects/payment.png",
+    "description": "Full-stack platform where recruiters can post jobs and students can upload resumes and uses AI-based keyword matching to rank resumes against job descriptions.",
+    "skills": ["React", "FastAPI", "Keyword Extraction", "Mongo"]
+
+  }
+]

@@ -1,0 +1,130 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1.8px solid rgba(255, 255, 255, 0.35);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.12),
+    inset 0 0 12px rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  margin-top: 145px;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(235, 235, 235, 0.75) 0%,
+    rgba(192, 192, 192, 0.5) 40%,
+    rgba(177, 177, 177, 0.4) 60%,
+    rgba(190, 189, 189, 0.75) 100%
+  );
+  z-index: -1;
+  filter: brightness(1);
+  box-shadow:
+    inset 0 0 50px rgba(255, 255, 255, 0.3);
+}
+
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: var(--color-text);
+  z-index: 1;
+}
+
+.title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 33px;
+  color: black;
+  font-family: var(--font-roboto);
+}
+
+.description {
+  font-size: 25px;
+  line-height: 1.6;
+  max-width: 1000px;
+  font-family: "Playfair Display", serif;
+  color: black;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #e754ec, #8a2be2);
+  color: black;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 17px 26px;
+  box-shadow: 0 0 4px 0 rgba(201, 196, 196, 0.25);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.span1{
+text-decoration: underline;
+color: darkorchid;
+}
+
+.heroImg {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  z-index: 1;
+}
+
+.glassCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(172, 173, 182, 0.37);
+  border: 1px solid rgba(231, 224, 224, 0.18);
+  z-index: 1;
+}
+.resumeBtn {
+  text-decoration: none;
+  background-color:white;
+  color:black;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 16px 28px;
+ border: #000000 2px solid;
+ margin-top: 20px;
+}
+.buttonsContainer {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+}
+.typingEffect {
+  font-size: 1.2rem;
+  color: #474403; 
+  margin-top: 0.5rem;
+  display: block;
+}
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
