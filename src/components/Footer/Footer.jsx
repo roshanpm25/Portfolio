@@ -4,7 +4,7 @@ import { getImageUrl } from "../../utils";
 
 export const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id="contact">
       <div className={styles.text}>
         <p>© 2025 ROSHAN P M. All rights reserved.</p>
       </div>
