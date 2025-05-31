@@ -13,7 +13,7 @@
   },
     {
     "title": "AI-Powered Resume Ranker",
-    "imageSrc": "projects/payment.png",
+    "imageSrc": "projects/resume.png",
     "description": "Full-stack platform where recruiters can post jobs and students can upload resumes and uses AI-based keyword matching to rank resumes against job descriptions."
 
 
