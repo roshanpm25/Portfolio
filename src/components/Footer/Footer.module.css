@@ -2,7 +2,6 @@
 
 .footer {
   color: var(--color-text);
-  margin-top: 0;
   background: linear-gradient(90deg, #3a1c71, #000000);
   backdrop-filter: blur(10px);
   padding: 58px 10%;
@@ -13,7 +12,7 @@
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
-  margin-top:10px;
+
 }
 
 .text p {
