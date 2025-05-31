@@ -4,11 +4,12 @@
   margin-top: 0px;
   color: var(--color-text);
   margin-right: 10%;
-background: linear-gradient(to bottom,#bfa2db, #f0d9ff,#f3f1f5,#f3f1f5);
-backdrop-filter: blur(12px); 
-height: 950px;
+  background: linear-gradient(to bottom,#bfa2db, #f0d9ff,#f3f1f5,#f3f1f5);
+  backdrop-filter: blur(12px);
+  /* Remove fixed height */
+  min-height: 950px;
   width: 100%;
-  
+  overflow: visible; /* ensure no hiding */
 }
 
 .title {
